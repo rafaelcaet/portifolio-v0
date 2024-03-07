@@ -14,7 +14,10 @@
             </div>
           </div>
           <!-- Main content -->
+          <div class="bg-dim-500"></div>
           <!-- Right sidebar -->
+          <div class="bg-dim-200"></div>
+          <div></div>
         </div>
       </div>
     </div>
