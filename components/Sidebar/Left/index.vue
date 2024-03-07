@@ -10,7 +10,12 @@
         </div>
       </nuxt-link>
     </div>
-    <HomeIcon />
+    <SidebarLeftTab active>
+      <template v-slot:icon>
+        <HomeIcon />
+      </template>
+      <template v-slot:name> Home </template>
+    </SidebarLeftTab>
   </div>
 </template>
 <script setup>
