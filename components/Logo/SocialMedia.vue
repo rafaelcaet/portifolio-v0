@@ -1,4 +1,3 @@
-<
 <template>
   <!-- Social Media Logo -->
   <svg

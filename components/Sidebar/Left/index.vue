@@ -10,15 +10,83 @@
         </div>
       </nuxt-link>
     </div>
-    <SidebarLeftTab active>
-      <template v-slot:icon>
-        <HomeIcon />
-      </template>
-      <template v-slot:name> Home </template>
-    </SidebarLeftTab>
+    <div class="mt-2 space-y-3">
+      <!-- home icon -->
+      <SidebarLeftTab active>
+        <template v-slot:icon>
+          <HomeIcon />
+        </template>
+        <template v-slot:name> Home </template>
+      </SidebarLeftTab>
+
+      <!-- hashtag icon -->
+      <SidebarLeftTab>
+        <template v-slot:icon>
+          <HashtagIcon />
+        </template>
+        <template v-slot:name> Explore </template>
+      </SidebarLeftTab>
+
+      <!-- bell icon -->
+      <SidebarLeftTab>
+        <template v-slot:icon>
+          <BellIcon />
+        </template>
+        <template v-slot:name> Notifications </template>
+      </SidebarLeftTab>
+
+      <!-- inbox icon -->
+      <SidebarLeftTab>
+        <template v-slot:icon>
+          <InboxIcon />
+        </template>
+        <template v-slot:name> Messages </template>
+      </SidebarLeftTab>
+
+      <!-- bookmark icons -->
+      <SidebarLeftTab>
+        <template v-slot:icon>
+          <BookmarkIcon />
+        </template>
+        <template v-slot:name> Bookmarks </template>
+      </SidebarLeftTab>
+
+      <!-- documentText icon -->
+      <SidebarLeftTab>
+        <template v-slot:icon>
+          <DocumentTextIcon />
+        </template>
+        <template v-slot:name> Lists </template>
+      </SidebarLeftTab>
+
+      <!-- user icon -->
+      <SidebarLeftTab>
+        <template v-slot:icon>
+          <UserIcon />
+        </template>
+        <template v-slot:name> Profile </template>
+      </SidebarLeftTab>
+
+      <!-- dotsCircleHorizontal icon -->
+      <SidebarLeftTab>
+        <template v-slot:icon>
+          <DotsCircleHorizontalIcon />
+        </template>
+        <template v-slot:name> More </template>
+      </SidebarLeftTab>
+    </div>
   </div>
 </template>
 <script setup>
 import { HomeIcon } from "@heroicons/vue/solid";
+import {
+  HashtagIcon,
+  BellIcon,
+  InboxIcon,
+  BookmarkIcon,
+  DocumentTextIcon,
+  UserIcon,
+  DotsCircleHorizontalIcon,
+} from "@heroicons/vue/outline";
 const { defaultTransition } = useTailwindConfig();
 </script>
