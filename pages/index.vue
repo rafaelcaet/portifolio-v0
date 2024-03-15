@@ -1,8 +1,8 @@
 <template>
-  <div>
-    <MainSection title="Home" :loading="loading"> Content </MainSection>
-  </div>
+    <div>
+        <MainSection title="Home" :loading="loading"> Content </MainSection>
+    </div>
 </template>
 <script setup>
-const loading = ref(false);
+const loading = ref(false)
 </script>
