@@ -56,7 +56,7 @@ const whatsHappeningItems = ref([
 const whoToFollowItems = ref([
   {
     name: "Bouca de 09",
-    handle: "@bouce09",
+    handle: "@boucaDe09",
     image: "https://picsum.photos/200/200",
   },
   {
