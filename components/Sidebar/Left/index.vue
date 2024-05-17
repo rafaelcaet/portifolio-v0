@@ -5,8 +5,10 @@
             :class="defaultTransition"
         >
             <nuxt-link to="/">
-                <div class="w-8 h-8">
-                    <LogoSocialMedia />
+                <div
+                    class="w-8 h-8 text-sm font-bold text-gray-800 dark:text-gray-100"
+                >
+                    RAFAEL CAETANO
                 </div>
             </nuxt-link>
         </div>
@@ -18,61 +20,26 @@
                 </template>
                 <template v-slot:name> Home </template>
             </SidebarLeftTab>
-
+            <!-- User icon -->
+            <SidebarLeftTab>
+                <template v-slot:icon>
+                    <UserIcon />
+                </template>
+                <template v-slot:name> About </template>
+            </SidebarLeftTab>
             <!-- hashtag icon -->
             <SidebarLeftTab>
                 <template v-slot:icon>
                     <HashtagIcon />
                 </template>
-                <template v-slot:name> Explore </template>
+                <template v-slot:name> Projects </template>
             </SidebarLeftTab>
-
-            <!-- bell icon -->
-            <SidebarLeftTab>
-                <template v-slot:icon>
-                    <BellIcon />
-                </template>
-                <template v-slot:name> Notifications </template>
-            </SidebarLeftTab>
-
             <!-- inbox icon -->
             <SidebarLeftTab>
                 <template v-slot:icon>
                     <InboxIcon />
                 </template>
-                <template v-slot:name> Messages </template>
-            </SidebarLeftTab>
-
-            <!-- bookmark icons -->
-            <SidebarLeftTab>
-                <template v-slot:icon>
-                    <BookmarkIcon />
-                </template>
-                <template v-slot:name> Bookmarks </template>
-            </SidebarLeftTab>
-
-            <!-- documentText icon -->
-            <SidebarLeftTab>
-                <template v-slot:icon>
-                    <DocumentTextIcon />
-                </template>
-                <template v-slot:name> Lists </template>
-            </SidebarLeftTab>
-
-            <!-- user icon -->
-            <SidebarLeftTab>
-                <template v-slot:icon>
-                    <UserIcon />
-                </template>
-                <template v-slot:name> Profile </template>
-            </SidebarLeftTab>
-
-            <!-- dotsCircleHorizontal icon -->
-            <SidebarLeftTab>
-                <template v-slot:icon>
-                    <DotsCircleHorizontalIcon />
-                </template>
-                <template v-slot:name> More </template>
+                <template v-slot:name> Contacts </template>
             </SidebarLeftTab>
         </div>
     </div>
