@@ -7,8 +7,6 @@
     </div>
 </template>
 <script setup>
-const wrapperClasses = computed(
-    () => `${defaultTransition} ${twitterBorderColor}`,
-)
-const { defaultTransition, twitterBorderColor } = useTailwindConfig()
+const wrapperClasses = computed(() => `${defaultTransition} ${thinBorderColor}`)
+const { defaultTransition, thinBorderColor } = useTailwindConfig()
 </script>

@@ -6,34 +6,37 @@
         >
             <nuxt-link to="/">
                 <div
-                    class="w-8 h-8 text-sm font-bold text-gray-800 dark:text-gray-100"
+                    class="w-14 h-11 text-sm font-jbmono text-gray-800 dark:text-gray-100"
                 >
                     RAFAEL CAETANO
                 </div>
             </nuxt-link>
         </div>
         <div class="mt-2 space-y-3">
-            <!-- home icon -->
-            <SidebarLeftTab active>
+            <!-- Home icon -->
+            <SidebarLeftTab active path="/home">
                 <template v-slot:icon>
                     <HomeIcon />
                 </template>
                 <template v-slot:name> Home </template>
             </SidebarLeftTab>
+
             <!-- User icon -->
-            <SidebarLeftTab>
+            <SidebarLeftTab active path="/about">
                 <template v-slot:icon>
                     <UserIcon />
                 </template>
                 <template v-slot:name> About </template>
             </SidebarLeftTab>
+
             <!-- hashtag icon -->
-            <SidebarLeftTab>
+            <SidebarLeftTab active path="/projects">
                 <template v-slot:icon>
                     <HashtagIcon />
                 </template>
                 <template v-slot:name> Projects </template>
             </SidebarLeftTab>
+
             <!-- inbox icon -->
             <SidebarLeftTab>
                 <template v-slot:icon>
@@ -46,14 +49,6 @@
 </template>
 <script setup>
 import { HomeIcon } from '@heroicons/vue/solid'
-import {
-    HashtagIcon,
-    BellIcon,
-    InboxIcon,
-    BookmarkIcon,
-    DocumentTextIcon,
-    UserIcon,
-    DotsCircleHorizontalIcon,
-} from '@heroicons/vue/outline'
+import { HashtagIcon, InboxIcon, UserIcon } from '@heroicons/vue/outline'
 const { defaultTransition } = useTailwindConfig()
 </script>

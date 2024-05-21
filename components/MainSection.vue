@@ -1,5 +1,5 @@
 <template>
-    <div class="border-x" :class="twitterBorderColor">
+    <div class="border-x" :class="thinBorderColor">
         <div
             class="sticky top-0 px-4 py-3 bg-white/80 backdrop-blur-md dark:bg-dim-900/80"
         >
@@ -10,7 +10,7 @@
         <div
             v-if="loading"
             class="flex items-center justify-center p-4 border-b"
-            :class="twitterBorderColor"
+            :class="thinBorderColor"
         >
             <UISpinner />
         </div>
@@ -20,7 +20,7 @@
     </div>
 </template>
 <script setup>
-const { twitterBorderColor } = useTailwindConfig()
+const { thinBorderColor } = useTailwindConfig()
 
 const props = defineProps({
     title: {
