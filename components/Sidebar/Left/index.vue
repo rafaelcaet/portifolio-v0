@@ -6,21 +6,13 @@
         >
             <nuxt-link to="/">
                 <div
-                    class="w-14 h-11 text-sm font-jbmono text-gray-800 dark:text-gray-100"
+                    class="w-14 h-11 m-2 text-bold text-sm font-jbmono text-gray-800 dark:text-gray-100"
                 >
-                    RAFAEL CAETANO
+                    Rafael Caetano
                 </div>
             </nuxt-link>
         </div>
         <div class="mt-2 space-y-3">
-            <!-- Home icon -->
-            <SidebarLeftTab active path="/home">
-                <template v-slot:icon>
-                    <HomeIcon />
-                </template>
-                <template v-slot:name> Home </template>
-            </SidebarLeftTab>
-
             <!-- User icon -->
             <SidebarLeftTab active path="/about">
                 <template v-slot:icon>
@@ -38,17 +30,34 @@
             </SidebarLeftTab>
 
             <!-- inbox icon -->
-            <SidebarLeftTab>
+            <SidebarLeftTab active path="/contact">
                 <template v-slot:icon>
                     <InboxIcon />
                 </template>
-                <template v-slot:name> Contacts </template>
+                <template v-slot:name> Contact </template>
             </SidebarLeftTab>
+
+            <!-- Cog icon -->
+            <SidebarLeftToggleButton>
+                <div class="border-white">
+                    <ToggleButton
+                        v-model="checked"
+                        onLabel="On"
+                        offLabel="Off"
+                    />
+                </div>
+            </SidebarLeftToggleButton>
         </div>
     </div>
 </template>
 <script setup>
-import { HomeIcon } from '@heroicons/vue/solid'
-import { HashtagIcon, InboxIcon, UserIcon } from '@heroicons/vue/outline'
+import {
+    HashtagIcon,
+    InboxIcon,
+    UserIcon,
+    MoonIcon,
+    SunIcon,
+    CogIcon,
+} from '@heroicons/vue/outline'
 const { defaultTransition } = useTailwindConfig()
 </script>
