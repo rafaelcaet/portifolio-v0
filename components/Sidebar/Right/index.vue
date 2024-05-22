@@ -4,10 +4,12 @@
         <SidebarRightPreviewCard title="Find me">
             <SidebarRightPreviewCardItem v-for="findMe in findMeItems">
                 <div>
-                    <h2 class="font-bold text-gray-800 text-md dark:text-white">
+                    <h2
+                        class="font-bold font-jbmono text-gray-800 text-md dark:text-white"
+                    >
                         {{ findMe.title }}
                     </h2>
-                    <p class="text-sx text-gray-400">
+                    <p class="text-sx font-jbmono text-gray-400">
                         {{ findMe.count }}
                     </p>
                 </div>
@@ -17,8 +19,9 @@
 </template>
 <script setup>
 const findMeItems = ref([
-    { icon: '', title: 'Instagram ', count: '@_rafaelcaetano' },
-    { icon: '', title: 'GitHub', count: 'rafealcaet' },
+    { icon: '', title: 'GitHub', count: 'rafaelcaet' },
     { icon: '', title: 'LinkedIn', count: 'Rafael Caetano' },
+    { icon: '', title: 'Email', count: 'fael.caetsantos@gmail.com' },
+    { icon: '', title: 'Instagram ', count: '@_rafaelcaetano' },
 ])
 </script>

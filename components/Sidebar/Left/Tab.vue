@@ -1,7 +1,7 @@
 <template>
     <nuxt-link
         :to="path"
-        class="flex items-center p-3 text-black w-min hover:bg-gray-200 rounded-full dark:hover:bg-dim-200 dark:text-white"
+        class="flex items-center p-3 font-jbmono text-black w-min hover:bg-gray-200 rounded-full dark:hover:bg-dim-200 dark:text-white"
         :class="defaultTransition"
     >
         <div class="w-6 h-6 text-dark">

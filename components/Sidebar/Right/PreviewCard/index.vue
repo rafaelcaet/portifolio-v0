@@ -4,7 +4,7 @@
         :class="thinBorderColor"
     >
         <h1
-            class="p-3 text-xl font-extrabold text-gray-900 border-b dark:text-white"
+            class="p-3 text-xl font-jbmono font-extrabold text-gray-900 border-b dark:text-white"
             :class="thinBorderColor"
         >
             {{ props.title }}
