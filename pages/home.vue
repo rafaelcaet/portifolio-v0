@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="font-jbmono">
         <MainSection title="Home" :loading="loading"> Content </MainSection>
     </div>
 </template>

@@ -23,11 +23,14 @@
                             <SidebarRight />
                         </div>
                     </div>
+                    <!--- Schema color button -->
+                    <ToggleButton />
                 </div>
             </div>
         </div>
     </div>
 </template>
 <script setup>
-const darkMode = ref(true)
+import ToggleButton from '/components/ToggleButton.vue'
+const darkMode = ref(false)
 </script>

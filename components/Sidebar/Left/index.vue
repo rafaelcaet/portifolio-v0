@@ -36,28 +36,10 @@
                 </template>
                 <template v-slot:name> Contact </template>
             </SidebarLeftTab>
-
-            <!-- Cog icon -->
-            <SidebarLeftToggleButton>
-                <div class="border-white">
-                    <ToggleButton
-                        v-model="checked"
-                        onLabel="On"
-                        offLabel="Off"
-                    />
-                </div>
-            </SidebarLeftToggleButton>
         </div>
     </div>
 </template>
 <script setup>
-import {
-    HashtagIcon,
-    InboxIcon,
-    UserIcon,
-    MoonIcon,
-    SunIcon,
-    CogIcon,
-} from '@heroicons/vue/outline'
+import { HashtagIcon, InboxIcon, UserIcon } from '@heroicons/vue/outline'
 const { defaultTransition } = useTailwindConfig()
 </script>

@@ -6,7 +6,14 @@
         <slot></slot>
     </div>
 </template>
-<script setup>
+<script setup lang="ts">
 const wrapperClasses = computed(() => `${defaultTransition} ${thinBorderColor}`)
 const { defaultTransition, thinBorderColor } = useTailwindConfig()
+const props = defineProps({
+    active: {
+        type: Boolean,
+        default: false,
+    },
+    path: String,
+})
 </script>
