@@ -32,5 +32,5 @@
 </template>
 <script setup>
 import ToggleButton from '/components/ToggleButton.vue'
-const darkMode = ref(false)
+const darkMode = ref(true)
 </script>

@@ -1,6 +1,8 @@
 <template>
     <div class="font-jbmono">
-        <MainSection title="About" :loading="loading"> oi </MainSection>
+        <MainSection title="About" :loading="loading">
+            <MainContentAbout />
+        </MainSection>
     </div>
 </template>
 <script setup>

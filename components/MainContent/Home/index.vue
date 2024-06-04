@@ -1,10 +1,10 @@
 <template>
     <div class="mt-16 ml-2 mr-2">
-        <div class="items-center">
+        <div class="space-y-4 space-x-1">
             <h1
-                class="text-xl font-bold text-gray-800 dark:text-gray-100 ml-36 mb-4"
+                class="ml-56 text-xl font-bold text-gray-800 dark:text-gray-100"
             >
-                Welcome to my portifolio!
+                Welcome!
             </h1>
             <p class="text-gray-800 dark:text-gray-100">
                 You can browse the fields on your left to find out a little more
