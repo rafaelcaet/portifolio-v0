@@ -15,13 +15,12 @@
             <UISpinner />
         </div>
         <div v-else>
-            <slot></slot>
+            <slot> </slot>
         </div>
     </div>
 </template>
 <script setup>
 const { thinBorderColor } = useTailwindConfig()
-
 const props = defineProps({
     title: {
         type: String,
