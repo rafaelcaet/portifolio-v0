@@ -50,30 +50,34 @@
                     Skills and levels
                 </h1>
                 <div
-                    class="text-base items-center ml-16 grid grid-flow-col grid-rows-2 text-gray-800 dark:text-gray-100"
+                    class="text-base items-center justify-around grid grid-flow-col grid-rows-2 text-gray-800 dark:text-gray-100"
                 >
-                    <div>
+                    <div class="flex flex-col items-center">
                         <h2>team works</h2>
                         <UserGroupIcon class="size-20" />
                     </div>
-                    <div>
+
+                    <div class="flex flex-col items-center">
                         <h2>English</h2>
                         <TranslateIcon class="size-20" />
                     </div>
 
-                    <div>
+                    <div class="flex flex-col items-center">
                         <h2>Dedicated</h2>
                         <HeartIcon class="size-20" />
                     </div>
-                    <div>
+
+                    <div class="flex flex-col items-center">
                         <h2>Portuguese</h2>
                         <TranslateIcon class="size-20" />
                     </div>
-                    <div>
+
+                    <div class="flex flex-col items-center">
                         <h2>Communication</h2>
                         <ChatIcon class="size-20" />
                     </div>
-                    <div>
+
+                    <div class="flex flex-col items-center">
                         <h2>Funny</h2>
                         <EmojiHappyIcon class="size-20" />
                     </div>
